@@ -1,1 +1,2 @@
 # ucsc-practicles
+> study materials
