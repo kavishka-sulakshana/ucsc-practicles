@@ -9,25 +9,25 @@ let label2 = getElmt('lbl2');
 let label3 = getElmt('lbl3');
 let label4 = getElmt('lbl4');
 
-function disableChks(){
+const disableChks=()=>{
     check1.disabled = true;
     check2.disabled = true;
     check3.disabled = true;
     check4.disabled = true;
 }
-function activeChks(){
+const activeChks=()=>{
     check1.disabled = false;
     check2.disabled = false;
     check3.disabled = false;
     check4.disabled = false;
 }
-function toggleLbls(){
+const toggleLbls=()=>{
     label1.classList.add('disabled');
     label2.classList.add('disabled');
     label3.classList.add('disabled');
     label4.classList.add('disabled');
 }
-function activeLbls(){
+const activeLbls=()=>{
     label1.classList.remove('disabled');
     label2.classList.remove('disabled');
     label3.classList.remove('disabled');
@@ -47,7 +47,7 @@ const checkEvent = (check, label) => {
             activeChks();
             activeLbls();
         } 
-    })
+    });
 }
 
 checkEvent(check1,label1);
